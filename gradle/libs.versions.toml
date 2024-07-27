@@ -1,6 +1,6 @@
 [versions]
 io-kotest = "5.9.0"
-junit-jupiter = "5.10.2"
+junit-jupiter = "5.10.3"
 kotlin = "2.0.0"
 org-jetbrains-annotations = "24.0.1"
 org-mockito-mockito-core = "4.11.0"
