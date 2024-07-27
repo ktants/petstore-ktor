@@ -20,9 +20,9 @@ testing {
     suites {
         val test by getting(JvmTestSuite::class) {
             dependencies {
-                implementation(catalog.lib("io-kotest-runner-junit5"))
-                implementation(catalog.lib("io-kotest-assertions-core"))
-                implementation(catalog.lib("io-kotest-framework-datatest"))
+                implementation(catalog.lib("kotest-runner-junit5"))
+                implementation(catalog.lib("kotest-assertions-core"))
+                implementation(catalog.lib("kotest-framework-datatest"))
             }
         }
     }
