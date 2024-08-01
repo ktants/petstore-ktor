@@ -11,6 +11,7 @@ dependencies {
     implementation(libs.ktor.server.cio)
     implementation(libs.ktor.server.cors)
     implementation(libs.ktor.server.content.negotiation)
+    implementation(libs.ktor.server.default.headers)
     implementation(libs.ktor.server.host.common)
     implementation(libs.ktor.serialization.kotlinx.json)
 
@@ -18,11 +19,16 @@ dependencies {
     implementation(libs.h2)
     implementation(libs.postgresql)
     implementation(libs.exposed.core)
+    implementation(libs.exposed.dao)
     implementation(libs.exposed.jdbc)
+    implementation(libs.exposed.java.time)
 
     // Logging
     runtimeOnly(libs.logback.classic)
     implementation(libs.sl4j.api)
+
+    // GSon
+    implementation(libs.gson)
 }
 
 

@@ -2,7 +2,7 @@ pluginManagement {
     includeBuild("build-logic")
 }
 
-rootProject.name = "petstore-kotlin"
+rootProject.name = "petstore-ktor"
 
 include(":app")
 include(":commons")
