@@ -1,0 +1,122 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.5 Chrome/126.0.6478.183 Electron/31.3.0 Safari/537.36" version="24.7.5">
+  <diagram id="9FAe4dqTGk3pnAus8e2B" name="Page-1">
+    <mxGraphModel dx="2061" dy="1291" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="node10" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;pet&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; name: varchar(30)&lt;br&gt; birth_date: date&lt;br&gt; type_id: integer&lt;br&gt; owner_id: integer&lt;br&gt; gender_id: integer&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; id: integer&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Avenir Next;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;sketch=1;curveFitting=1;jiggle=2;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" parent="1" vertex="1">
+          <mxGeometry x="-124" y="132" width="145" height="188" as="geometry" />
+        </mxCell>
+        <mxCell id="node0" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;pet_gender&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; name: varchar(60)&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; id: bigint&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Avenir Next;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;sketch=1;curveFitting=1;jiggle=2;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" parent="1" vertex="1">
+          <mxGeometry x="270" y="120" width="145" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="node9" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;pet_owner&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; first_name: varchar(30)&lt;br&gt; last_name: varchar(30)&lt;br&gt; address: varchar(255)&lt;br&gt; city: varchar(80)&lt;br&gt; telephone: varchar(20)&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; id: integer&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Avenir Next;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;sketch=1;curveFitting=1;jiggle=2;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" parent="1" vertex="1">
+          <mxGeometry x="-140" y="367" width="177" height="198" as="geometry" />
+        </mxCell>
+        <mxCell id="node7" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;pet_photo&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; label: varchar(80)&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; photo_id: bigint&lt;br&gt; pet_id: bigint&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Avenir Next;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;sketch=1;curveFitting=1;jiggle=2;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" parent="1" vertex="1">
+          <mxGeometry x="178" y="367" width="140" height="123" as="geometry" />
+        </mxCell>
+        <mxCell id="node4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;pet_type&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; name: varchar(80)&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; id: integer&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Avenir Next;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;sketch=1;curveFitting=1;jiggle=2;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" parent="1" vertex="1">
+          <mxGeometry x="-370" y="175" width="145" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="node3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;pet_visit&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; pet_id: integer&lt;br&gt; visit_date: date&lt;br&gt; description: text&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; id: integer&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Avenir Next;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;sketch=1;curveFitting=1;jiggle=2;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" parent="1" vertex="1">
+          <mxGeometry x="-119" y="-85" width="134" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="node1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;photo  /* Keeps photos of pets and vets. */&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; data  /* Actual image */: bytea&lt;br&gt; meta  /* Some meta data associated with image. */: json&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; id: bigint&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Avenir Next;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;sketch=1;curveFitting=1;jiggle=2;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" parent="1" vertex="1">
+          <mxGeometry x="59.5" y="547" width="378" height="123" as="geometry" />
+        </mxCell>
+        <mxCell id="node5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;speciality&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; name: varchar(80)&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; id: integer&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Avenir Next;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;sketch=1;curveFitting=1;jiggle=2;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" parent="1" vertex="1">
+          <mxGeometry x="379" y="1060" width="145" height="109" as="geometry" />
+        </mxCell>
+        <mxCell id="node8" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;vet&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; first_name: varchar(30)&lt;br&gt; last_name: varchar(30)&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; id: integer&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Avenir Next;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;sketch=1;curveFitting=1;jiggle=2;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" parent="1" vertex="1">
+          <mxGeometry x="160" y="907" width="177" height="123" as="geometry" />
+        </mxCell>
+        <mxCell id="node2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;vet_photo&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; label: varchar(80)&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; photo_id: bigint&lt;br&gt; vet_id: bigint&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Avenir Next;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;sketch=1;curveFitting=1;jiggle=2;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" parent="1" vertex="1">
+          <mxGeometry x="178" y="727" width="140" height="109" as="geometry" />
+        </mxCell>
+        <mxCell id="KKSDCXWJiFFC3KxSYmI5-1" style="edgeStyle=entityRelationEdgeStyle;rounded=0;hachureGap=4;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Avenir Next;sketch=1;curveFitting=1;jiggle=2;fillColor=#F2CC8F;strokeColor=#E07A5F;elbow=vertical;endArrow=block;endFill=0;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="node6" target="node5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="node6" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;vet_speciality&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; vet_id: integer&lt;br&gt; specialty_id: integer&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Avenir Next;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;sketch=1;curveFitting=1;jiggle=2;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" parent="1" vertex="1">
+          <mxGeometry x="373" y="790" width="157" height="83" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=none;endArrow=block;endSize=12;strokeColor=#E07A5F;exitX=1.007;exitY=0.207;exitDx=0;exitDy=0;entryX=0.000;entryY=0.500;entryDx=0;entryDy=0;exitPerimeter=0;sketch=1;curveFitting=1;jiggle=2;fontFamily=Avenir Next;fillColor=#F2CC8F;labelBackgroundColor=none;fontColor=default;" parent="1" source="node10" target="node0" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label8" value="gender_id:id" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=#E07A5F;sketch=1;curveFitting=1;jiggle=2;fontFamily=Avenir Next;labelBackgroundColor=none;fontColor=#393C56;" parent="edge1" vertex="1" connectable="0">
+          <mxGeometry x="120" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=none;endArrow=block;endSize=12;strokeColor=#E07A5F;exitX=0.500;exitY=1.000;exitDx=0;exitDy=0;entryX=0.500;entryY=0.000;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;fontFamily=Avenir Next;fillColor=#F2CC8F;labelBackgroundColor=none;fontColor=default;" parent="1" source="node10" target="node9" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label26" value="owner_id:id" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=#E07A5F;sketch=1;curveFitting=1;jiggle=2;fontFamily=Avenir Next;labelBackgroundColor=none;fontColor=#393C56;" parent="edge4" vertex="1" connectable="0">
+          <mxGeometry x="-123" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="edge7" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=none;endArrow=block;endSize=12;strokeColor=#E07A5F;exitX=0.000;exitY=0.500;exitDx=0;exitDy=0;entryX=1.000;entryY=0.500;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;fontFamily=Avenir Next;fillColor=#F2CC8F;labelBackgroundColor=none;fontColor=default;" parent="1" source="node10" target="node4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label44" value="type_id:id" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=#E07A5F;sketch=1;curveFitting=1;jiggle=2;fontFamily=Avenir Next;labelBackgroundColor=none;fontColor=#393C56;" parent="edge7" vertex="1" connectable="0">
+          <mxGeometry x="-192" y="199" as="geometry" />
+        </mxCell>
+        <mxCell id="edge6" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=none;endArrow=block;endSize=12;strokeColor=#E07A5F;exitX=0.500;exitY=0.000;exitDx=0;exitDy=0;entryX=1.000;entryY=0.618;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;fontFamily=Avenir Next;fillColor=#F2CC8F;labelBackgroundColor=none;fontColor=default;" parent="1" source="node7" target="node10" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="248" y="248" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label38" value="pet_id:id" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=#E07A5F;sketch=1;curveFitting=1;jiggle=2;fontFamily=Avenir Next;labelBackgroundColor=none;fontColor=#393C56;" parent="edge6" vertex="1" connectable="0">
+          <mxGeometry x="107" y="219" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=none;endArrow=block;endSize=12;strokeColor=#E07A5F;exitX=0.500;exitY=1.000;exitDx=0;exitDy=0;entryX=0.500;entryY=0.000;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;fontFamily=Avenir Next;fillColor=#F2CC8F;labelBackgroundColor=none;fontColor=default;" parent="1" source="node7" target="node1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label14" value="photo_id:id" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=#E07A5F;sketch=1;curveFitting=1;jiggle=2;fontFamily=Avenir Next;labelBackgroundColor=none;fontColor=#393C56;" parent="edge2" vertex="1" connectable="0">
+          <mxGeometry x="179" y="498" as="geometry" />
+        </mxCell>
+        <mxCell id="edge9" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=none;endArrow=block;endSize=12;strokeColor=#E07A5F;exitX=0.500;exitY=1.000;exitDx=0;exitDy=0;entryX=0.500;entryY=0.000;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;fontFamily=Avenir Next;fillColor=#F2CC8F;labelBackgroundColor=none;fontColor=default;" parent="1" source="node3" target="node10" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label56" value="pet_id:id" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=#E07A5F;sketch=1;curveFitting=1;jiggle=2;fontFamily=Avenir Next;labelBackgroundColor=none;fontColor=#393C56;" parent="edge9" vertex="1" connectable="0">
+          <mxGeometry x="-107" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="edge8" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=none;endArrow=block;endSize=12;strokeColor=#E07A5F;exitX=0.500;exitY=0.000;exitDx=0;exitDy=0;entryX=0.500;entryY=1.000;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;fontFamily=Avenir Next;fillColor=#F2CC8F;labelBackgroundColor=none;fontColor=default;" parent="1" source="node2" target="node1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label50" value="photo_id:id" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=#E07A5F;sketch=1;curveFitting=1;jiggle=2;fontFamily=Avenir Next;labelBackgroundColor=none;fontColor=#393C56;" parent="edge8" vertex="1" connectable="0">
+          <mxGeometry x="179" y="678" as="geometry" />
+        </mxCell>
+        <mxCell id="edge5" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=none;endArrow=block;endSize=12;strokeColor=#E07A5F;exitX=0.500;exitY=1.000;exitDx=0;exitDy=0;entryX=0.500;entryY=0.000;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;fontFamily=Avenir Next;fillColor=#F2CC8F;labelBackgroundColor=none;fontColor=default;" parent="1" source="node2" target="node8" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label32" value="vet_id:id" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=#E07A5F;sketch=1;curveFitting=1;jiggle=2;fontFamily=Avenir Next;labelBackgroundColor=none;fontColor=#393C56;" parent="edge5" vertex="1" connectable="0">
+          <mxGeometry x="195" y="858" as="geometry" />
+        </mxCell>
+        <mxCell id="edge0" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=none;endArrow=block;endSize=12;strokeColor=#E07A5F;exitX=0.500;exitY=1.000;exitDx=0;exitDy=0;entryX=1.017;entryY=0.593;entryDx=0;entryDy=0;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;fontFamily=Avenir Next;fillColor=#F2CC8F;labelBackgroundColor=none;fontColor=default;" parent="1" source="node6" target="node8" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="452" y="980" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label2" value="vet_id:id" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=#E07A5F;sketch=1;curveFitting=1;jiggle=2;fontFamily=Avenir Next;labelBackgroundColor=none;fontColor=#393C56;" parent="edge0" vertex="1" connectable="0">
+          <mxGeometry x="383" y="960" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

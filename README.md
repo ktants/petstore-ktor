@@ -4,3 +4,7 @@
 
 **_NOTE_**: The original project can be found on Spring's [Github repo](https://github.com/spring-petclinic/spring-petclinic-kotlin).
 
+## Database Schema
+
+![](./notes/pet.drawio.png)
+
