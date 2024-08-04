@@ -1,10 +1,13 @@
 plugins {
     id("buildlogic.kotlin.app")
     alias(libs.plugins.ktor)
-    alias(libs.plugins.kotlin.serialization)
 }
 
 dependencies {
+
+    // External Configuration
+    implementation(libs.hoplite.core)
+    implementation(libs.hoplite.yaml)
 
     // Ktor
     implementation(libs.ktor.server.core)
@@ -13,7 +16,7 @@ dependencies {
     implementation(libs.ktor.server.content.negotiation)
     implementation(libs.ktor.server.default.headers)
     implementation(libs.ktor.server.host.common)
-    implementation(libs.ktor.serialization.kotlinx.json)
+    implementation(libs.ktor.serialization.jackson)
 
     // DB Access
     implementation(libs.h2)
@@ -22,6 +25,7 @@ dependencies {
     implementation(libs.exposed.dao)
     implementation(libs.exposed.jdbc)
     implementation(libs.exposed.java.time)
+    implementation(libs.hikaricp)
 
     // Logging
     runtimeOnly(libs.logback.classic)

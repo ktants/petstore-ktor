@@ -1,4 +1,4 @@
-package petstore.persistence.types
+package petstore.infrastructure.persistence.types
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder

@@ -1,4 +1,4 @@
-package petstore.persistence
+package petstore.infrastructure.persistence.entity
 
 import org.jetbrains.exposed.dao.LongEntity
 import org.jetbrains.exposed.dao.LongEntityClass

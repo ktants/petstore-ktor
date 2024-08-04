@@ -1,16 +1,16 @@
-package petstore.persistence
+package petstore.infrastructure.persistence.entity
 
 import org.jetbrains.exposed.dao.IntEntity
 import org.jetbrains.exposed.dao.IntEntityClass
 import org.jetbrains.exposed.dao.id.EntityID
 import org.jetbrains.exposed.dao.id.IntIdTable
 
-class PetPhoto(id: EntityID<Int>) : IntEntity(id) {
+class VetPhoto(id: EntityID<Int>) : IntEntity(id) {
 
-    object Table : IntIdTable("pet_photo") {
+    object Table : IntIdTable("vet_photo") {
         val label = varchar("label", 80)
         val photo = reference("photo_id", Photo.Table)
     }
 
-    companion object : IntEntityClass<PetPhoto>(Table)
+    companion object : IntEntityClass<VetPhoto>(Table)
 }

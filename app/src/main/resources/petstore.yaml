@@ -1,0 +1,12 @@
+datasource:
+  connection:
+    driverClassName: com.postgres.jdbc.Driver
+    username: petstore
+    password: petstore
+    jdbcUrl: jdbc:postgresql://localhost:5433/petclinic
+  connectionPool:
+    minPoolSize: 3
+    maxPoolSize: 20
+    connectionTimeOut: 5s
+    idleTimeOut: 10s
+    poolName: petstore-ktor
