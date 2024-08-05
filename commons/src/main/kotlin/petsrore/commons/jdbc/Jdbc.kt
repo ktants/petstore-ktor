@@ -3,22 +3,17 @@
 package petsrore.commons.jdbc
 
 import io.ktor.http.*
-import petsrore.commons.ScriptBlock
-import petsrore.commons.scriptBlocks
+import java.io.IOException
 import java.net.URL
 import java.sql.Connection
 import java.sql.SQLException
 import javax.sql.DataSource
 
 
-@Suppress("SqlSourceToSinkFlow")
-@Throws(SQLException::class)
+@Throws(SQLException::class, IOException::class)
 fun DataSource.executeScript(script: URL) =
     transaction {
-        val statement = createStatement()
-        script.openStream().bufferedReader().scriptBlocks {
-            statement.execute(content)
-            ScriptBlock.ProcessControl.CONTINUE
+        createStatement().use { statement ->
         }
     }
 
