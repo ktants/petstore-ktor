@@ -4,7 +4,7 @@ import com.sksamuel.hoplite.Masked
 import java.time.Duration
 import java.sql.Connection as JdbcConnection
 
-data class RdbmsConfig(
+data class DatabaseConfig(
     val connection: Connection,
     val connectionPool: ConnectionPool,
     val schema: String? = "petstore-sp",

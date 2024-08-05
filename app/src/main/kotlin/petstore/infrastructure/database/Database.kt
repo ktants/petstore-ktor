@@ -1,14 +1,14 @@
 @file:JvmName("Rdbms")
 
-package petstore.infrastructure.rdbms
+package petstore.infrastructure.database
 
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
 import org.jetbrains.exposed.sql.Database
 import petsrore.commons.resourcesOf
-import petstore.config.RdbmsConfig
+import petstore.config.DatabaseConfig
 
-fun Database.Companion.connect(config: RdbmsConfig): HikariDataSource {
+fun Database.Companion.connect(config: DatabaseConfig): HikariDataSource {
     return HikariDataSource(
         HikariConfig().apply {
             password = config.connection.password.value
@@ -26,12 +26,12 @@ fun Database.Companion.connect(config: RdbmsConfig): HikariDataSource {
             if (config.validateConfig) validate()
             if (config.validateScripts) config.validateScripts()
         }
-    ).also { Database.connect(it) }
+    ).also { connect(it) }
 }
 
-private fun RdbmsConfig.validateScripts() {
+private fun DatabaseConfig.validateScripts() {
     fun validate(script: String?, whichScript: String) {
-        require(script?.let { resourcesOf<RdbmsConfig>(script).isPresent } ?: return) {
+        require(script?.let { resourcesOf<DatabaseConfig>(script).isPresent } ?: return) {
             "[$whichScript] required, but not found: $script"
         }
     }

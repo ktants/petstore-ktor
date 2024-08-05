@@ -7,7 +7,7 @@ import com.sksamuel.hoplite.addResourceSource
 import java.io.File
 
 data class Config(
-    val datasource: RdbmsConfig,
+    val datasource: DatabaseConfig,
 ) {
     companion object {
 
