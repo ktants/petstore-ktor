@@ -1,6 +1,6 @@
 @file:JvmName("Kotlin")
 
-package petsrore.commons.kotlin
+package petstore.commons
 
 fun <T> forEach(vararg ts: T, block: (T) -> Unit) = ts.forEach(block)
 

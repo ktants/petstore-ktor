@@ -1,4 +1,4 @@
-package petsrore.commons.api
+package petstore.commons.api
 
 interface Pageable {
 

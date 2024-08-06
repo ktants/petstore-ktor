@@ -1,11 +1,12 @@
 @file:JvmName("Jdbc")
 
-package petsrore.commons.jdbc
+package petstore.commons.jdbc
 
 import io.ktor.http.*
 import java.io.IOException
 import java.net.URL
 import java.sql.Connection
+import java.sql.ResultSet
 import java.sql.SQLException
 import javax.sql.DataSource
 
@@ -34,3 +35,5 @@ fun DataSource.transaction(action: Connection.() -> Unit) {
         }
     }
 }
+
+fun <T> ResultSet.fetch(getIt: ResultSet.() -> T): T? = takeIf { next() }?.getIt()

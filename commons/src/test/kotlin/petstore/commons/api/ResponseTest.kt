@@ -1,4 +1,4 @@
-package petsrore.commons.api
+package petstore.commons.api
 
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import io.kotest.core.spec.style.DescribeSpec
@@ -11,8 +11,8 @@ class ResponseTest : DescribeSpec({
 
         describe("successful response") {
             it("should serialize successful response") {
-                val part: Response.Part<*, String> = Response.Part(
-                    data = mapOf(
+                val part: Response.Many<*, String> = Response.Many(
+                    items = mapOf(
                         "name" to "peter",
                         "age" to 21,
                         "today" to LocalDate.of(2024, 1, 16)

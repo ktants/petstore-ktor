@@ -1,4 +1,4 @@
-package petsrore.commons
+package petstore.commons
 
 import java.io.File
 import java.net.URL

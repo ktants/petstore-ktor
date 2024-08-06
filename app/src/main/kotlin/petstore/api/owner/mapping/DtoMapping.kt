@@ -19,9 +19,8 @@ fun formattedName(firstName: String?, lastName: String?): String = buildString {
     firstName?.let { append(" (", it, ")") }
 }
 
-fun PetOwner.formatedName(): String =
-    buildString(firstName.length + lastName.length + 2) {
-        lastName.takeUnless { it.isEmpty() }?.also { append(it) }
-        firstName.takeUnless { it.isEmpty() }?.also { append(" (", it, ")") }
-    }
+fun PetOwner.formatedName(): String = buildString(firstName.length + lastName.length + 2) {
+    lastName.takeUnless { it.isEmpty() }?.also { append(it) }
+    firstName.takeUnless { it.isEmpty() }?.also { append(" (", it, ")") }
+}
 

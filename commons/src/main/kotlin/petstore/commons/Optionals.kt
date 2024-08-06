@@ -1,4 +1,4 @@
-package petsrore.commons
+package petstore.commons
 
 import java.util.Optional
 

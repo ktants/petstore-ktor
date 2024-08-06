@@ -1,6 +1,7 @@
 package petstore.config
 
 import com.sksamuel.hoplite.ConfigLoaderBuilder
+import com.sksamuel.hoplite.ExperimentalHoplite
 import com.sksamuel.hoplite.addEnvironmentSource
 import com.sksamuel.hoplite.addFileSource
 import com.sksamuel.hoplite.addResourceSource
@@ -8,7 +9,9 @@ import java.io.File
 
 data class Config(
     val datasource: DatabaseConfig,
+    val api: ApiConfig = ApiConfig(),
 ) {
+    @ExperimentalHoplite
     companion object {
 
         private const val CONFIG = "petstore"
@@ -22,7 +25,8 @@ data class Config(
             val userDir = File(System.getProperty("user.dir")).canonicalPath
 
             return ConfigLoaderBuilder.default()
-                .addResourceSource("$CONFIG.yaml")
+                .withExplicitSealedTypes()
+                .addResourceSource("/$CONFIG.yaml")
                 .addEnvironmentSource()
                 .addOptionalFileSource(userDir, ".$CONFIG.yaml")
                 .addOptionalFileSource(workingDirConfig, "$CONFIG.yaml")

@@ -1,8 +1,8 @@
 datasource:
   connection:
     driverClassName: com.postgres.jdbc.Driver
-    username: petstore
-    password: petstore
+    username: pet_clinic_backend
+    password: petclinic6877
     jdbcUrl: jdbc:postgresql://localhost:5433/petclinic
   connectionPool:
     minPoolSize: 3

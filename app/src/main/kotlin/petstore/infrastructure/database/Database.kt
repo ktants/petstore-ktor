@@ -5,7 +5,7 @@ package petstore.infrastructure.database
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
 import org.jetbrains.exposed.sql.Database
-import petsrore.commons.resourcesOf
+import petstore.commons.resourcesOf
 import petstore.config.DatabaseConfig
 
 fun Database.Companion.connect(config: DatabaseConfig): HikariDataSource {

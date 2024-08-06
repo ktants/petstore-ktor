@@ -8,9 +8,9 @@ import org.jetbrains.exposed.sql.andIfNotNull
 import org.jetbrains.exposed.sql.emptySized
 import org.jetbrains.exposed.sql.or
 import org.jetbrains.exposed.sql.transactions.transaction
-import petsrore.commons.api.Pageable
-import petsrore.commons.api.Response
-import petsrore.commons.api.slice
+import petstore.commons.api.Pageable
+import petstore.commons.api.Response
+import petstore.commons.api.slice
 import petstore.api.owner.dto.NewOwnerDto
 import petstore.api.owner.dto.OwnerDto
 import petstore.api.owner.mapping.formatedName
@@ -45,7 +45,7 @@ class OwnerApi {
                     telephone = petOwner.telephone.orEmpty(),
                     pets = petOwner.pets.orderBy(Pet.Table.name to SortOrder.ASC).map { it.name }.toList()
                 )
-            }.let { Response.Part(it, pageable.location(), false) }
+            }.let { Response.Many(it, pageable.location(), false) }
 
     }
 
@@ -139,7 +139,7 @@ class OwnerApi {
 
 }
 
-fun Pageable.location(): String =
+private fun Pageable.location(): String =
     "page:$pageNo [$pageSize]"
 
 
